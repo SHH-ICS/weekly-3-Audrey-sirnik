@@ -8,8 +8,47 @@
     <title>Page Title</title>
   </head>
   <body>
-    
-    <h1>Hello, World!</h1>
- 
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Pizza Perfect</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="" style="color:gray">Order Now</a>
+            <a class="mdl-navigation__link" href="" style="color:gray">Menu</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Pizza Perfect</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Order Now</a>
+          <a class="mdl-navigation__link" href="">Menu</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <!-- Textfield with Floating Label -->
+          
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="sample3">
+              <label class="mdl-textfield__label" for="sample3">What size would you like?(Large or Extra large)</label>
+            </div>
+          </form>
+          <!-- Textfield with Floating Label -->
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="sample3">
+              <label class="mdl-textfield__label" for="sample3">How many toppings would you like?(1-4)</label>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
