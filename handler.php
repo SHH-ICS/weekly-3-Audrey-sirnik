@@ -26,7 +26,7 @@
     } else{
     echo "<h1>Error</h1>";
     echo "<h3> the size you wrote was not an option. Please choose Large or Extra large </h3>";
-    }
+    } break;
     if ($toppings=="1" or $toppings == "one" or $toppings == "One"){
       $toppingscost = 1
     } elseif ($toppings == "2" or $toppings == "two" or $toppings == "Two"){
@@ -38,7 +38,17 @@
     } else{
       echo"<h1>Error<h1>";
       echo "<h3>the number of toppings you wrote was not an option.Please write a number from 1-4<h3>";
-    }
+    } continue;
+  echo"<h1>Cost:</h1>";
+  echo"<h3> Pizza:$", number_format($pizzacost,2,'.',''),"</h3>";
+  echo"<h3> Toppings:$", number_format($toppingscost,2,'.',''),"</h3>";
+  $subtotal = $pizzacost + $toppingscost;
+  echo"<h3>Subtotal:$", number_format($subtotal,2,'.',''),"</h3>";
+  $HST = $subtotal*0.13;
+  echo"<h3>HST:$", number_format($HST,2,'.',''),"</h3>";
+  $total = $subtotal + $HST;
+  echo"<h3>Total:$", number_format($total,2,'.',''),"</h3>";
+
 
 
     echo "<h1>Welcome ".$Pizza."!</h1>\n";
