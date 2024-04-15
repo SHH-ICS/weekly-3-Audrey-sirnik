@@ -14,6 +14,10 @@
     if ( isset( $_POST['Pizza'] ) ){
       $Pizza = $_POST['Pizza'];
     }
+    $toppings = "";
+    if (isset($_POST['toppings'])) {
+      $toppings = $_POST['toppings'];
+    }
     echo "<h1>Welcome ".$Pizza."!</h1>\n";
     ?>
     
