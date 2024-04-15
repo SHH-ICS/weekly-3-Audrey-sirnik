@@ -48,9 +48,6 @@
   echo"<h3>HST:$", number_format($HST,2,'.',''),"</h3>";
   $total = $subtotal + $HST;
   echo"<h3>Total:$", number_format($total,2,'.',''),"</h3>";
-
-
-
     echo "<h1>Welcome ".$Pizza."!</h1>\n";
     ?>
     
