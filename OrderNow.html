@@ -33,26 +33,25 @@
       </div>
       <main class="mdl-layout__content">
         <div class="page-content">
+        <form name="myForm" action="handler.php" method="POST">
           <h3>What size would you like?(Large or Extra large)</h3>
         <!-- Textfield with Floating Label -->
-        <form action="#">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
+            <input class="mdl-textfield__input" type="text" id="sample3" name="Pizza">
             <label class="mdl-textfield__label" for="sample3">Please enter the size you would like</label>
           </div>
-        </form>
-        <h3>How many toppings would you like?(1-4)</h3>
-        <!-- Textfield with Floating Label -->
-        <form action="#">
+          <h3>How many topping would you like?(1-4)</h3>
+          <!-- Textfield with Floating Label -->
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
+            <input class="mdl-textfield__input" type="text" id="sample3" name="toppings">
             <label class="mdl-textfield__label" for="sample3">Please enter the number of topping you would like </label>
           </div>
+          <br>
+          <!-- Colored raised button -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Continue to checkout
+          </button>
         </form>
-        <!-- Colored raised button -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-          Continue to checkout
-        </button>
         </div>
       </main>
     </div>

@@ -28,13 +28,13 @@
     echo "<h3> the size you wrote was not an option. Please choose Large or Extra large </h3>";
     } break;
     if ($toppings=="1" or $toppings == "one" or $toppings == "One"){
-      $toppingscost = 1
+      $toppingscost = 1;
     } elseif ($toppings == "2" or $toppings == "two" or $toppings == "Two"){
-      $toppingscost = 1.75
+      $toppingscost = 1.75;
     } elseif ($toppings == "3" or $toppings == "three" or $toppings == "Three"){
-      $toppingscost = 2.50
+      $toppingscost = 2.50;
     } elseif ($toppings == "4" or $toppings == "four" or $toppings == "Four"){
-      $toppingscost = 3.35
+      $toppingscost = 3.35;
     } else{
       echo"<h1>Error<h1>";
       echo "<h3>the number of toppings you wrote was not an option.Please write a number from 1-4<h3>";
@@ -48,7 +48,7 @@
   echo"<h3>HST:$", number_format($HST,2,'.',''),"</h3>";
   $total = $subtotal + $HST;
   echo"<h3>Total:$", number_format($total,2,'.',''),"</h3>";
-    echo "<h1>Welcome ".$Pizza."!</h1>\n";
+    }
     ?>
     
   </body>
