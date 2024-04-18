@@ -35,6 +35,8 @@
           } elseif ($Pizza == "Extra large" or $Pizza == "Extra Large" or $Pizza == "extra large" or $Pizza == "extra Large" or $Pizza == "Extra-large" or $Pizza == "extra-large" or $Pizza == "Extra-Large" or $Pizza == "extra-Large") {
             $pizzacost = 10;
           } else {
+            echo "<br>";
+            echo"<br>";
             echo "<h1>Error</h1>";
             echo "<h3> the size you wrote was not an option. Please choose Large or Extra large </h3>";
             #<!-- Colored raised button -->
@@ -54,6 +56,8 @@
           } elseif ($toppings == "4" or $toppings == "four" or $toppings == "Four") {
             $toppingscost = 3.35;
           } else {
+            echo "<br>";
+            echo "<br>";
             echo "<h1>Error<h1>";
             echo "<h3>the number of toppings you wrote was not an option.Please write a number from 1-4<h3>";
             #<!-- Colored raised button -->
@@ -64,6 +68,8 @@
       </a>';
             break;
           }
+          echo"<br>";
+          echo"<br>";
           echo "<h1>Cost:</h1>";
           echo "<h3> Pizza:$", number_format($pizzacost, 2, '.', ''), "</h3>";
           echo "<h3> Toppings:$", number_format($toppingscost, 2, '.', ''), "</h3>";
