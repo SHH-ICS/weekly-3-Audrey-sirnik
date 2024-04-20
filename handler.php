@@ -38,7 +38,7 @@
             echo "<br>";
             echo"<br>";
             echo "<h1>Error</h1>";
-            echo "<h3> the size you wrote was not an option. Please choose Large or Extra large </h3>";
+            echo "<h3> The size you wrote was not an option. Please choose Large or Extra large </h3>";
             #<!-- Colored raised button -->
             echo '<a href="/OrderNow.html">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
@@ -59,7 +59,7 @@
             echo "<br>";
             echo "<br>";
             echo "<h1>Error<h1>";
-            echo "<h3>the number of toppings you wrote was not an option.Please write a number from 1-4<h3>";
+            echo "<h3>The number of toppings you wrote was not an option.Please write a number from 1-4<h3>";
             #<!-- Colored raised button -->
             echo '<a href="/OrderNow.html">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
